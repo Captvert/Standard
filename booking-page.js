@@ -599,7 +599,7 @@ function insertParameter(...params) {
            
 
             options.forEach((option)=>{
-                const optionStructure = `<div class='number-of-products-option${count}' onclick=" let option = document.querySelector('.number-of-products-option${count}'); optionSelectionNOP(option);"> <div class='option1-items-container'> ${option} </div> <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'> </div>`
+                const optionStructure = `<div class='number-of-products-option${count}' onclick=" let option = document.querySelector('.number-of-products-option${count}'); optionSelectionNOP(option);"> <div class='option1-items-container'> ${option} </div> <img src='./dropdown-icon.svg' class='dropdown-icon'> </div>`
                 optionsContainer.innerHTML += optionStructure
                 count ++
                 console.log(optionsContainer);
@@ -1373,7 +1373,7 @@ if (!document.querySelector('.number-of-products').querySelector('picked-option'
            
 
             options.forEach((option)=>{
-                const optionStructure = `<div class='expected-number-of-visitors2-option${count} drop-down-option-env' onclick=" let option = document.querySelector('.expected-number-of-visitors2-option${count}'); optoinSelectionENV(option);"> <div class='option1-items-container'> ${option} </div> <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'> </div>`
+                const optionStructure = `<div class='expected-number-of-visitors2-option${count} drop-down-option-env' onclick=" let option = document.querySelector('.expected-number-of-visitors2-option${count}'); optoinSelectionENV(option);"> <div class='option1-items-container'> ${option} </div> <img src='./dropdown-icon.svg' class='dropdown-icon'> </div>`
                 optionsContainer.innerHTML += optionStructure
                 count ++
 
@@ -1929,3 +1929,4 @@ console.log(sidebar.classList);
 
 
 };
+
