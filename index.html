@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./header.css" >
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="./experience.css">
+    <link rel="stylesheet" href="./Booking-page.css">
+    <link rel="stylesheet" href="./pos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled | Event Photographer</title>
+</head>
+<body class="body">
+
+<!--Header-->
+    <header class="header">
+
+        <div class="header-items-container">
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="booking-section">
+        <div class="booking-introduction">
+            <p class="booking-introduction-title">
+                You Will Get A Call Today!
+            </p>
+            <p class="booking-introduction-description">
+                To inform you about the service and confirm the booking. 
+                Answer these questions to make it as productive as possible!
+            </p>
+        </div>
+
+            <form action="thank-you-page" class="booking-form">
+                
+                <div class="booking-form-inputs-container">
+
+
+
+
+
+
+                <div class="service-pick-container">
+                        <label class="service-pick-title" for="#service-pick">Pick a service</label>
+                        <div class="service-pick">
+                        <div class="service-pick-option1" onclick="
+                            let service = document.querySelector('.service-pick-option1');
+                            let itsContainer = document.querySelector('.service1-based-container');
+                            serviceSelection(service , itsContainer);">
+                        
+                        <div class="option1-items-container"><img src="ImagesFolder/wedding-coverage-icon.png" class="option1-icon"> Wedding Coverage</div>
+                        <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'>
+                
+            
+                        </div>
+                        <div class="service-pick-option2" onclick="
+                        
+                        service = document.querySelector('.service-pick-option2');
+                        itsContainer = document.querySelector('.service2-based-container');
+                        serviceSelection(service , itsContainer);">
+                        <div class="option1-items-container"><img src="ImagesFolder/product-shoot-icon.png" class="option1-icon"> Product Shoot</div>
+                        <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'>
+                    
+                        </div>
+
+                        <div class="service-pick-option3"
+                        onclick="
+                            service = document.querySelector('.service-pick-option3');
+                            itsContainer = document.querySelector('.service3-based-container');
+                            serviceSelection(service , itsContainer);">
+                        
+                        
+                        <div class="option1-items-container"><img src="ImagesFolder/studio-shoot-icon.png" class="option1-icon"> Studio Shoot</div>
+                        <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'>
+                        </div>
+                        <div class="service-pick-option4" onclick="
+                        service = document.querySelector('.service-pick-option4');
+                        itsContainer = document.querySelector('.service4-based-container');
+                        serviceSelection(service , itsContainer);">
+                        
+                        
+                        <div class="option1-items-container"><img src="ImagesFolder/event-coverage-icon.png" class="option1-icon"> Event Coverage</div>
+                        <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'>
+                        </div>
+                    </div>
+
+                    <p class="service-pick-description">Different pricing depends on packages and specific needs you may have. 
+                        which will be discussed in our call.</p>
+
+
+
+                </div>
+
+                    <div class="input-wrapper fullname-wrapper">
+                        
+                        <input type="text" class="fullname-input text-input" id="fullname-input" placeholder="Full Name (Personal)"  required    id="fullname-input" autocomplete="off">
+                        <label for="fullname-input" class="fullname-input-label label-off">Full Name (Personal)</label>
+
+                    </div>
+
+                    <div class="phone-number-input-wrapper phone-number-wrapper">
+                        
+                        <input type="tel" class="use-input-phone-number text-input" id="use-input-phone-number" placeholder="Phone Number"  required    id="use-input-phone-number" autocomplete="off">
+                        <label for="use-input-phone-number" class="use-input-phone-number-label label-off">Phone Number</label>
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="service1-based-container service-based-container-off">
+
+                       
+                        <div class="input-wrapper place-of-occasion-wrapper">
+                        
+                        <input type="text" class="place-of-occasion-input text-input  form-input"placeholder="Place of Occasion"  required autocomplete="off">
+                        <label for="place-input" class="place-of-occasion-input-label label-off" data-value="PlaceOfWedding">Place of Occasion</label>
+                        </div>
+                       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+                    <div class="amount-of-visitors-wrapper" data-value="visitorAmount">
+                        
+                    <label class="custom-dropdown-title" for="#custom-dropdown">Expected Number Of Visitors</label>
+                    <div class="custom-dropdown  form-input" onclick="
+                    ">
+
+
+                       
+
+                    </div>
+                    
+                    </div>
+
+
+
+                    
+                    
+
+
+
+
+                    </div>
+                    <div class="service2-based-container service-based-container-off" >
+
+                        <div class="brand-name-input-wrapper brand-name-wrapper">
+                        
+                        <input type="text" class="use-input-brand-name text-input form-input" id="use-input-brand-name" placeholder="Brand Name"  required    id="use-input-brand-name" autocomplete="off" data-value="brandName">
+                        <label for="use-input-brand-name" class="use-input-brand-name-label label-off">Brand Name</label>
+
+                        </div>
+
+                    
+                    <label class="number-of-products-title nop-title" for="#number-of-products">Number Of Products</label>
+                        <div class="number-of-products form-input" data-value="productAmount">
+
+
+                       
+
+                    </div>
+
+
+
+
+
+
+
+                    </div>
+                    <div class="service3-based-container service-based-container-off" >
+
+
+
+                    <label class="purpose-of-shoot-title" for="#purpose-of-shoot">Purpose of Shoot</label>
+                    <div class="purpose-of-shoot POS-title  form-input"  data-value="purposeOfShoot">
+
+
+                       
+
+                    </div>
+
+
+                    </div>
+                    <div class="service4-based-container service-based-container-off" >
+                       <div class="event-coverage-input1-wrapper event-coverage-input1-name-wrapper">
+                        
+                        <input type="text" class="event-coverage-use-input text-input form-input" id="event-coverage-use-input" placeholder="Event Host Name (Company)"  required    id="event-coverage-use-input" autocomplete="off" data-value="eventHostName">
+                        <label for="event-coverage-use-input" class="event-coverage-use-input-label label-off">Event Host Name (Company)</label>
+
+                        </div>
+                        
+                        
+                        <div class="event-coverage-location-input-wrapper event-location-wrapper">
+                        
+                        <input type="text" class="event-coverage-location text-input  form-input" id="event-coverage-location" placeholder="Event Location"  required    id="event-coverage-location" autocomplete="off" data-value="eventLocation">
+                        <label for="event-coverage-location" class="event-coverage-location-label label-off">Event Location</label>
+
+                        </div>
+
+                        <div class="event-duration-input-wrapper event-duration-wrapper">
+                        
+                        <input  type="text" class="use-input-event-duration text-input form-input" id="use-input-event-duration" placeholder="Event Duration"  required    id="use-input-event-duration" autocomplete="off" data-value="eventDuration">
+                        <label for="use-input-event-duration" class="use-input-event-duration-label label-off">Event Duration</label>
+
+                        </div>
+
+                    <label class="expected-number-of-visitors2-title" for="#expected-number-of-visitors2">Expected Number Of Visitors</label>
+                    <div class="expected-number-of-visitors2 form-input"  data-value="eventVisitors">
+
+
+                       
+
+                    </div>
+
+
+
+                </div>
+
+                                        <div class="booking-date-and-time-wrapper">
+                          
+                        <label for="date-and-time" class="specify-date-label date-label-title">Specify a date & time</label>
+
+                            <div class="booking-date-and-time-container">
+                                  <button class="booking-calendar-button" onclick="toggleCalendar();         
+                                  const dateLabel = document.querySelector('.date-label-title');
+                                  dateLabel.classList.replace('specify-date-label' , 'specify-date-label-valid');" type="button">
+        <strong class="calendar-button-day"></strong>
+    </button>
+
+    <div class="booking-calendar-off">
+
+        <div class="booking-calendar-header">
+            <p class="days-of-week">S</p>
+            <p class="days-of-week">S</p>
+            <p class="days-of-week">M</p>
+            <p class="days-of-week">T</p>
+            <p class="days-of-week">W</p>
+            <p class="days-of-week">T</p>
+            <p class="days-of-week">F</p>
+        </div>
+        <div class="booking-calendar-body">
+
+            <!-- January 2025 (starts on Wednesday, Jan 1) -->
+            <div class="month-container">
+                <div class="bcb-header January">
+                    <p class="month">January</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body bcb-body1 January">
+                    <p class="days" style="grid-column: 5;" data-month="January" data-day="Wednesday">1</p>
+                    <p class="days" data-month="January" data-day="Thursday">2</p>
+                    <p class="days" data-month="January" data-day="Friday">3</p>
+                    <p class="days" data-month="January" data-day="Saturday">4</p>
+                    <p class="days" data-month="January" data-day="Sunday">5</p>
+                    <p class="days" data-month="January" data-day="Monday">6</p>
+                    <p class="days" data-month="January" data-day="Tuesday">7</p>
+                    <p class="days" data-month="January" data-day="Wednesday">8</p>
+                    <p class="days" data-month="January" data-day="Thursday">9</p>
+                    <p class="days" data-month="January" data-day="Friday">10</p>
+                    <p class="days" data-month="January" data-day="Saturday">11</p>
+                    <p class="days" data-month="January" data-day="Sunday">12</p>
+                    <p class="days" data-month="January" data-day="Monday">13</p>
+                    <p class="days" data-month="January" data-day="Tuesday">14</p>
+                    <p class="days" data-month="January" data-day="Wednesday">15</p>
+                    <p class="days" data-month="January" data-day="Thursday">16</p>
+                    <p class="days" data-month="January" data-day="Friday">17</p>
+                    <p class="days" data-month="January" data-day="Saturday">18</p>
+                    <p class="days" data-month="January" data-day="Sunday">19</p>
+                    <p class="days" data-month="January" data-day="Monday">20</p>
+                    <p class="days" data-month="January" data-day="Tuesday">21</p>
+                    <p class="days" data-month="January" data-day="Wednesday">22</p>
+                    <p class="days" data-month="January" data-day="Thursday">23</p>
+                    <p class="days" data-month="January" data-day="Friday">24</p>
+                    <p class="days" data-month="January" data-day="Saturday">25</p>
+                    <p class="days" data-month="January" data-day="Sunday">26</p>
+                    <p class="days" data-month="January" data-day="Monday">27</p>
+                    <p class="days" data-month="January" data-day="Tuesday">28</p>
+                    <p class="days" data-month="January" data-day="Wednesday">29</p>
+                    <p class="days" data-month="January" data-day="Thursday">30</p>
+                    <p class="days" data-month="January" data-day="Friday">31</p>
+                </div>
+            </div>
+
+            <!-- February 2025 (starts on Saturday) -->
+            <div class="month-container">
+                <div class="bcb-header February">
+                    <p class="month">February</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body February">
+                    <p class="days" style="grid-column: 1;" data-month="February" data-day="Saturday">1</p>
+                    <p class="days" data-month="February" data-day="Sunday">2</p>
+                    <p class="days" data-month="February" data-day="Monday">3</p>
+                    <p class="days" data-month="February" data-day="Tuesday">4</p>
+                    <p class="days" data-month="February" data-day="Wednesday">5</p>
+                    <p class="days" data-month="February" data-day="Thursday">6</p>
+                    <p class="days" data-month="February" data-day="Friday">7</p>
+                    <p class="days" data-month="February" data-day="Saturday">8</p>
+                    <p class="days" data-month="February" data-day="Sunday">9</p>
+                    <p class="days" data-month="February" data-day="Monday">10</p>
+                    <p class="days" data-month="February" data-day="Tuesday">11</p>
+                    <p class="days" data-month="February" data-day="Wednesday">12</p>
+                    <p class="days" data-month="February" data-day="Thursday">13</p>
+                    <p class="days" data-month="February" data-day="Friday">14</p>
+                    <p class="days" data-month="February" data-day="Saturday">15</p>
+                    <p class="days" data-month="February" data-day="Sunday">16</p>
+                    <p class="days" data-month="February" data-day="Monday">17</p>
+                    <p class="days" data-month="February" data-day="Tuesday">18</p>
+                    <p class="days" data-month="February" data-day="Wednesday">19</p>
+                    <p class="days" data-month="February" data-day="Thursday">20</p>
+                    <p class="days" data-month="February" data-day="Friday">21</p>
+                    <p class="days" data-month="February" data-day="Saturday">22</p>
+                    <p class="days" data-month="February" data-day="Sunday">23</p>
+                    <p class="days" data-month="February" data-day="Monday">24</p>
+                    <p class="days" data-month="February" data-day="Tuesday">25</p>
+                    <p class="days" data-month="February" data-day="Wednesday">26</p>
+                    <p class="days" data-month="February" data-day="Thursday">27</p>
+                    <p class="days" data-month="February" data-day="Friday">28</p>
+                </div>
+            </div>
+
+            <!-- March 2025 (starts on Saturday) -->
+            <div class="month-container">
+                <div class="bcb-header March">
+                    <p class="month">March</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body March">
+                    <p class="days" style="grid-column: 1;" data-month="March" data-day="Saturday">1</p>
+                    <p class="days" data-month="March" data-day="Sunday">2</p>
+                    <p class="days" data-month="March" data-day="Monday">3</p>
+                    <p class="days" data-month="March" data-day="Tuesday">4</p>
+                    <p class="days" data-month="March" data-day="Wednesday">5</p>
+                    <p class="days" data-month="March" data-day="Thursday">6</p>
+                    <p class="days" data-month="March" data-day="Friday">7</p>
+                    <p class="days" data-month="March" data-day="Saturday">8</p>
+                    <p class="days" data-month="March" data-day="Sunday">9</p>
+                    <p class="days" data-month="March" data-day="Monday">10</p>
+                    <p class="days" data-month="March" data-day="Tuesday">11</p>
+                    <p class="days" data-month="March" data-day="Wednesday">12</p>
+                    <p class="days" data-month="March" data-day="Thursday">13</p>
+                    <p class="days" data-month="March" data-day="Friday">14</p>
+                    <p class="days" data-month="March" data-day="Saturday">15</p>
+                    <p class="days" data-month="March" data-day="Sunday">16</p>
+                    <p class="days" data-month="March" data-day="Monday">17</p>
+                    <p class="days" data-month="March" data-day="Tuesday">18</p>
+                    <p class="days" data-month="March" data-day="Wednesday">19</p>
+                    <p class="days" data-month="March" data-day="Thursday">20</p>
+                    <p class="days" data-month="March" data-day="Friday">21</p>
+                    <p class="days" data-month="March" data-day="Saturday">22</p>
+                    <p class="days" data-month="March" data-day="Sunday">23</p>
+                    <p class="days" data-month="March" data-day="Monday">24</p>
+                    <p class="days" data-month="March" data-day="Tuesday">25</p>
+                    <p class="days" data-month="March" data-day="Wednesday">26</p>
+                    <p class="days" data-month="March" data-day="Thursday">27</p>
+                    <p class="days" data-month="March" data-day="Friday">28</p>
+                    <p class="days" data-month="March" data-day="Saturday">29</p>
+                    <p class="days" data-month="March" data-day="Sunday">30</p>
+                    <p class="days" data-month="March" data-day="Monday">31</p>
+                </div>
+            </div>
+
+            <!-- April 2025 (starts on Tuesday) -->
+            <div class="month-container">
+                <div class="bcb-header April">
+                    <p class="month">April</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body April">
+                    <p class="days" style="grid-column: 4;" data-month="April" data-day="Tuesday">1</p>
+                    <p class="days" data-month="April" data-day="Wednesday">2</p>
+                    <p class="days" data-month="April" data-day="Thursday">3</p>
+                    <p class="days" data-month="April" data-day="Friday">4</p>
+                    <p class="days" data-month="April" data-day="Saturday">5</p>
+                    <p class="days" data-month="April" data-day="Sunday">6</p>
+                    <p class="days" data-month="April" data-day="Monday">7</p>
+                    <p class="days" data-month="April" data-day="Tuesday">8</p>
+                    <p class="days" data-month="April" data-day="Wednesday">9</p>
+                    <p class="days" data-month="April" data-day="Thursday">10</p>
+                    <p class="days" data-month="April" data-day="Friday">11</p>
+                    <p class="days" data-month="April" data-day="Saturday">12</p>
+                    <p class="days" data-month="April" data-day="Sunday">13</p>
+                    <p class="days" data-month="April" data-day="Monday">14</p>
+                    <p class="days" data-month="April" data-day="Tuesday">15</p>
+                    <p class="days" data-month="April" data-day="Wednesday">16</p>
+                    <p class="days" data-month="April" data-day="Thursday">17</p>
+                    <p class="days" data-month="April" data-day="Friday">18</p>
+                    <p class="days" data-month="April" data-day="Saturday">19</p>
+                    <p class="days" data-month="April" data-day="Sunday">20</p>
+                    <p class="days" data-month="April" data-day="Monday">21</p>
+                    <p class="days" data-month="April" data-day="Tuesday">22</p>
+                    <p class="days" data-month="April" data-day="Wednesday">23</p>
+                    <p class="days" data-month="April" data-day="Thursday">24</p>
+                    <p class="days" data-month="April" data-day="Friday">25</p>
+                    <p class="days" data-month="April" data-day="Saturday">26</p>
+                    <p class="days" data-month="April" data-day="Sunday">27</p>
+                    <p class="days" data-month="April" data-day="Monday">28</p>
+                    <p class="days" data-month="April" data-day="Tuesday">29</p>
+                    <p class="days" data-month="April" data-day="Wednesday">30</p>
+                </div>
+            </div>
+
+            <!-- May 2025 (starts on Wednesday) -->
+            <div class="month-container">
+                <div class="bcb-header May">
+                    <p class="month">May</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body May">
+                    <p class="days" style="grid-column: 6;" data-month="May" data-day="Wednesday">1</p>
+                    <p class="days" data-month="May" data-day="Thursday">2</p>
+                    <p class="days" data-month="May" data-day="Friday">3</p>
+                    <p class="days" data-month="May" data-day="Saturday">4</p>
+                    <p class="days" data-month="May" data-day="Sunday">5</p>
+                    <p class="days" data-month="May" data-day="Monday">6</p>
+                    <p class="days" data-month="May" data-day="Tuesday">7</p>
+                    <p class="days" data-month="May" data-day="Wednesday">8</p>
+                    <p class="days" data-month="May" data-day="Thursday">9</p>
+                    <p class="days" data-month="May" data-day="Friday">10</p>
+                    <p class="days" data-month="May" data-day="Saturday">11</p>
+                    <p class="days" data-month="May" data-day="Sunday">12</p>
+                    <p class="days" data-month="May" data-day="Monday">13</p>
+                    <p class="days" data-month="May" data-day="Tuesday">14</p>
+                    <p class="days" data-month="May" data-day="Wednesday">15</p>
+                    <p class="days" data-month="May" data-day="Thursday">16</p>
+                    <p class="days" data-month="May" data-day="Friday">17</p>
+                    <p class="days" data-month="May" data-day="Saturday">18</p>
+                    <p class="days" data-month="May" data-day="Sunday">19</p>
+                    <p class="days" data-month="May" data-day="Monday">20</p>
+                    <p class="days" data-month="May" data-day="Tuesday">21</p>
+                    <p class="days" data-month="May" data-day="Wednesday">22</p>
+                    <p class="days" data-month="May" data-day="Thursday">23</p>
+                    <p class="days" data-month="May" data-day="Friday">24</p>
+                    <p class="days" data-month="May" data-day="Saturday">25</p>
+                    <p class="days" data-month="May" data-day="Sunday">26</p>
+                    <p class="days" data-month="May" data-day="Monday">27</p>
+                    <p class="days" data-month="May" data-day="Tuesday">28</p>
+                    <p class="days" data-month="May" data-day="Wednesday">29</p>
+                    <p class="days" data-month="May" data-day="Thursday">30</p>
+                    <p class="days" data-month="May" data-day="Friday">31</p>
+                </div>
+            </div>
+
+            <!-- June 2025 (starts on Sunday) -->
+            <div class="month-container">
+                <div class="bcb-header June">
+                    <p class="month">June</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body June">
+                    <p class="days" style="grid-column: 2;" data-month="June" data-day="Sunday">1</p>
+                    <p class="days" data-month="June" data-day="Monday">2</p>
+                    <p class="days" data-month="June" data-day="Tuesday">3</p>
+                    <p class="days" data-month="June" data-day="Wednesday">4</p>
+                    <p class="days" data-month="June" data-day="Thursday">5</p>
+                    <p class="days" data-month="June" data-day="Friday">6</p>
+                    <p class="days" data-month="June" data-day="Saturday">7</p>
+                    <p class="days" data-month="June" data-day="Sunday">8</p>
+                    <p class="days" data-month="June" data-day="Monday">9</p>
+                    <p class="days" data-month="June" data-day="Tuesday">10</p>
+                    <p class="days" data-month="June" data-day="Wednesday">11</p>
+                    <p class="days" data-month="June" data-day="Thursday">12</p>
+                    <p class="days" data-month="June" data-day="Friday">13</p>
+                    <p class="days" data-month="June" data-day="Saturday">14</p>
+                    <p class="days" data-month="June" data-day="Sunday">15</p>
+                    <p class="days" data-month="June" data-day="Monday">16</p>
+                    <p class="days" data-month="June" data-day="Tuesday">17</p>
+                    <p class="days" data-month="June" data-day="Wednesday">18</p>
+                    <p class="days" data-month="June" data-day="Thursday">19</p>
+                    <p class="days" data-month="June" data-day="Friday">20</p>
+                    <p class="days" data-month="June" data-day="Saturday">21</p>
+                    <p class="days" data-month="June" data-day="Sunday">22</p>
+                    <p class="days" data-month="June" data-day="Monday">23</p>
+                    <p class="days" data-month="June" data-day="Tuesday">24</p>
+                    <p class="days" data-month="June" data-day="Wednesday">25</p>
+                    <p class="days" data-month="June" data-day="Thursday">26</p>
+                    <p class="days" data-month="June" data-day="Friday">27</p>
+                    <p class="days" data-month="June" data-day="Saturday">28</p>
+                    <p class="days" data-month="June" data-day="Sunday">29</p>
+                    <p class="days" data-month="June" data-day="Monday">30</p>
+                </div>
+            </div>
+
+            <!-- July 2025 (starts on Wednesday) -->
+            <div class="month-container">
+                <div class="bcb-header July">
+                    <p class="month">July</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body July">
+                    <p class="days" style="grid-column: 4;" data-month="July" data-day="Wednesday">1</p>
+                    <p class="days" data-month="July" data-day="Thursday">2</p>
+                    <p class="days" data-month="July" data-day="Friday">3</p>
+                    <p class="days" data-month="July" data-day="Saturday">4</p>
+                    <p class="days" data-month="July" data-day="Sunday">5</p>
+                    <p class="days" data-month="July" data-day="Monday">6</p>
+                    <p class="days" data-month="July" data-day="Tuesday">7</p>
+                    <p class="days" data-month="July" data-day="Wednesday">8</p>
+                    <p class="days" data-month="July" data-day="Thursday">9</p>
+                    <p class="days" data-month="July" data-day="Friday">10</p>
+                    <p class="days" data-month="July" data-day="Saturday">11</p>
+                    <p class="days" data-month="July" data-day="Sunday">12</p>
+                    <p class="days" data-month="July" data-day="Monday">13</p>
+                    <p class="days" data-month="July" data-day="Tuesday">14</p>
+                    <p class="days" data-month="July" data-day="Wednesday">15</p>
+                    <p class="days" data-month="July" data-day="Thursday">16</p>
+                    <p class="days" data-month="July" data-day="Friday">17</p>
+                    <p class="days" data-month="July" data-day="Saturday">18</p>
+                    <p class="days" data-month="July" data-day="Sunday">19</p>
+                    <p class="days" data-month="July" data-day="Monday">20</p>
+                    <p class="days" data-month="July" data-day="Tuesday">21</p>
+                    <p class="days" data-month="July" data-day="Wednesday">22</p>
+                    <p class="days" data-month="July" data-day="Thursday">23</p>
+                    <p class="days" data-month="July" data-day="Friday">24</p>
+                    <p class="days" data-month="July" data-day="Saturday">25</p>
+                    <p class="days" data-month="July" data-day="Sunday">26</p>
+                    <p class="days" data-month="July" data-day="Monday">27</p>
+                    <p class="days" data-month="July" data-day="Tuesday">28</p>
+                    <p class="days" data-month="July" data-day="Wednesday">29</p>
+                    <p class="days" data-month="July" data-day="Thursday">30</p>
+                    <p class="days" data-month="July" data-day="Friday">31</p>
+                </div>
+            </div>
+
+            <!-- August 2025 (starts on Saturday) -->
+            <div class="month-container">
+                <div class="bcb-header August">
+                    <p class="month">August</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body August">
+                    <p class="days" style="grid-column: 7;" data-month="August" data-day="Saturday">1</p>
+                    <p class="days" data-month="August" data-day="Sunday">2</p>
+                    <p class="days" data-month="August" data-day="Monday">3</p>
+                    <p class="days" data-month="August" data-day="Tuesday">4</p>
+                    <p class="days" data-month="August" data-day="Wednesday">5</p>
+                    <p class="days" data-month="August" data-day="Thursday">6</p>
+                    <p class="days" data-month="August" data-day="Friday">7</p>
+                    <p class="days" data-month="August" data-day="Saturday">8</p>
+                    <p class="days" data-month="August" data-day="Sunday">9</p>
+                    <p class="days" data-month="August" data-day="Monday">10</p>
+                    <p class="days" data-month="August" data-day="Tuesday">11</p>
+                    <p class="days" data-month="August" data-day="Wednesday">12</p>
+                    <p class="days" data-month="August" data-day="Thursday">13</p>
+                    <p class="days" data-month="August" data-day="Friday">14</p>
+                    <p class="days" data-month="August" data-day="Saturday">15</p>
+                    <p class="days" data-month="August" data-day="Sunday">16</p>
+                    <p class="days" data-month="August" data-day="Monday">17</p>
+                    <p class="days" data-month="August" data-day="Tuesday">18</p>
+                    <p class="days" data-month="August" data-day="Wednesday">19</p>
+                    <p class="days" data-month="August" data-day="Thursday">20</p>
+                    <p class="days" data-month="August" data-day="Friday">21</p>
+                    <p class="days" data-month="August" data-day="Saturday">22</p>
+                    <p class="days" data-month="August" data-day="Sunday">23</p>
+                    <p class="days" data-month="August" data-day="Monday">24</p>
+                    <p class="days" data-month="August" data-day="Tuesday">25</p>
+                    <p class="days" data-month="August" data-day="Wednesday">26</p>
+                    <p class="days" data-month="August" data-day="Thursday">27</p>
+                    <p class="days" data-month="August" data-day="Friday">28</p>
+                    <p class="days" data-month="August" data-day="Saturday">29</p>
+                    <p class="days" data-month="August" data-day="Sunday">30</p>
+                    <p class="days" data-month="August" data-day="Monday">31</p>
+                </div>
+            </div>
+
+            <!-- September 2025 (starts on Monday) -->
+            <div class="month-container">
+                <div class="bcb-header September">
+                    <p class="month">September</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body September">
+                    <p class="days" style="grid-column: 3;" data-month="September" data-day="Monday">1</p>
+                    <p class="days" data-month="September" data-day="Tuesday">2</p>
+                    <p class="days" data-month="September" data-day="Wednesday">3</p>
+                    <p class="days" data-month="September" data-day="Thursday">4</p>
+                    <p class="days" data-month="September" data-day="Friday">5</p>
+                    <p class="days" data-month="September" data-day="Saturday">6</p>
+                    <p class="days" data-month="September" data-day="Sunday">7</p>
+                    <p class="days" data-month="September" data-day="Monday">8</p>
+                    <p class="days" data-month="September" data-day="Tuesday">9</p>
+                    <p class="days" data-month="September" data-day="Wednesday">10</p>
+                    <p class="days" data-month="September" data-day="Thursday">11</p>
+                    <p class="days" data-month="September" data-day="Friday">12</p>
+                    <p class="days" data-month="September" data-day="Saturday">13</p>
+                    <p class="days" data-month="September" data-day="Sunday">14</p>
+                    <p class="days" data-month="September" data-day="Monday">15</p>
+                    <p class="days" data-month="September" data-day="Tuesday">16</p>
+                    <p class="days" data-month="September" data-day="Wednesday">17</p>
+                    <p class="days" data-month="September" data-day="Thursday">18</p>
+                    <p class="days" data-month="September" data-day="Friday">19</p>
+                    <p class="days" data-month="September" data-day="Saturday">20</p>
+                    <p class="days" data-month="September" data-day="Sunday">21</p>
+                    <p class="days" data-month="September" data-day="Monday">22</p>
+                    <p class="days" data-month="September" data-day="Tuesday">23</p>
+                    <p class="days" data-month="September" data-day="Wednesday">24</p>
+                    <p class="days" data-month="September" data-day="Thursday">25</p>
+                    <p class="days" data-month="September" data-day="Friday">26</p>
+                    <p class="days" data-month="September" data-day="Saturday">27</p>
+                    <p class="days" data-month="September" data-day="Sunday">28</p>
+                    <p class="days" data-month="September" data-day="Monday">29</p>
+                    <p class="days" data-month="September" data-day="Tuesday">30</p>
+                </div>
+            </div>
+
+            <!-- October 2025 (starts on Wednesday) -->
+            <div class="month-container">
+                <div class="bcb-header October">
+                    <p class="month">October</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body October">
+                    <p class="days" style="grid-column: 5;" data-month="October" data-day="Wednesday">1</p>
+                    <p class="days" data-month="October" data-day="Thursday">2</p>
+                    <p class="days" data-month="October" data-day="Friday">3</p>
+                    <p class="days" data-month="October" data-day="Saturday">4</p>
+                    <p class="days" data-month="October" data-day="Sunday">5</p>
+                    <p class="days" data-month="October" data-day="Monday">6</p>
+                    <p class="days" data-month="October" data-day="Tuesday">7</p>
+                    <p class="days" data-month="October" data-day="Wednesday">8</p>
+                    <p class="days" data-month="October" data-day="Thursday">9</p>
+                    <p class="days" data-month="October" data-day="Friday">10</p>
+                    <p class="days" data-month="October" data-day="Saturday">11</p>
+                    <p class="days" data-month="October" data-day="Sunday">12</p>
+                    <p class="days" data-month="October" data-day="Monday">13</p>
+                    <p class="days" data-month="October" data-day="Tuesday">14</p>
+                    <p class="days" data-month="October" data-day="Wednesday">15</p>
+                    <p class="days" data-month="October" data-day="Thursday">16</p>
+                    <p class="days" data-month="October" data-day="Friday">17</p>
+                    <p class="days" data-month="October" data-day="Saturday">18</p>
+                    <p class="days" data-month="October" data-day="Sunday">19</p>
+                    <p class="days" data-month="October" data-day="Monday">20</p>
+                    <p class="days" data-month="October" data-day="Tuesday">21</p>
+                    <p class="days" data-month="October" data-day="Wednesday">22</p>
+                    <p class="days" data-month="October" data-day="Thursday">23</p>
+                    <p class="days" data-month="October" data-day="Friday">24</p>
+                    <p class="days" data-month="October" data-day="Saturday">25</p>
+                    <p class="days" data-month="October" data-day="Sunday">26</p>
+                    <p class="days" data-month="October" data-day="Monday">27</p>
+                    <p class="days" data-month="October" data-day="Tuesday">28</p>
+                    <p class="days" data-month="October" data-day="Wednesday">29</p>
+                    <p class="days" data-month="October" data-day="Thursday">30</p>
+                    <p class="days" data-month="October" data-day="Friday">31</p>
+                </div>
+            </div>
+
+            <!-- November 2025 (starts on Saturday) -->
+            <div class="month-container">
+                <div class="bcb-header November">
+                    <p class="month">November</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body November">
+                    <p class="days" style="grid-column: 1;" data-month="November" data-day="Saturday">1</p>
+                    <p class="days" data-month="November" data-day="Sunday">2</p>
+                    <p class="days" data-month="November" data-day="Monday">3</p>
+                    <p class="days" data-month="November" data-day="Tuesday">4</p>
+                    <p class="days" data-month="November" data-day="Wednesday">5</p>
+                    <p class="days" data-month="November" data-day="Thursday">6</p>
+                    <p class="days" data-month="November" data-day="Friday">7</p>
+                    <p class="days" data-month="November" data-day="Saturday">8</p>
+                    <p class="days" data-month="November" data-day="Sunday">9</p>
+                    <p class="days" data-month="November" data-day="Monday">10</p>
+                    <p class="days" data-month="November" data-day="Tuesday">11</p>
+                    <p class="days" data-month="November" data-day="Wednesday">12</p>
+                    <p class="days" data-month="November" data-day="Thursday">13</p>
+                    <p class="days" data-month="November" data-day="Friday">14</p>
+                    <p class="days" data-month="November" data-day="Saturday">15</p>
+                    <p class="days" data-month="November" data-day="Sunday">16</p>
+                    <p class="days" data-month="November" data-day="Monday">17</p>
+                    <p class="days" data-month="November" data-day="Tuesday">18</p>
+                    <p class="days" data-month="November" data-day="Wednesday">19</p>
+                    <p class="days" data-month="November" data-day="Thursday">20</p>
+                    <p class="days" data-month="November" data-day="Friday">21</p>
+                    <p class="days" data-month="November" data-day="Saturday">22</p>
+                    <p class="days" data-month="November" data-day="Sunday">23</p>
+                    <p class="days" data-month="November" data-day="Monday">24</p>
+                    <p class="days" data-month="November" data-day="Tuesday">25</p>
+                    <p class="days" data-month="November" data-day="Wednesday">26</p>
+                    <p class="days" data-month="November" data-day="Thursday">27</p>
+                    <p class="days" data-month="November" data-day="Friday">28</p>
+                    <p class="days" data-month="November" data-day="Saturday">29</p>
+                    <p class="days" data-month="November" data-day="Sunday">30</p>
+                </div>
+            </div>
+
+            <!-- December 2025 (starts on Monday) -->
+            <div class="month-container">
+                <div class="bcb-header December">
+                    <p class="month">December</p> <p class="year">2025</p>
+                </div>
+                <div class="bcb-body December">
+                    <p class="days" style="grid-column: 3;" data-month="December" data-day="Monday">1</p>
+                    <p class="days" data-month="December" data-day="Tuesday">2</p>
+                    <p class="days" data-month="December" data-day="Wednesday">3</p>
+                    <p class="days" data-month="December" data-day="Thursday">4</p>
+                    <p class="days" data-month="December" data-day="Friday">5</p>
+                    <p class="days" data-month="December" data-day="Saturday">6</p>
+                    <p class="days" data-month="December" data-day="Sunday">7</p>
+                    <p class="days" data-month="December" data-day="Monday">8</p>
+                    <p class="days" data-month="December" data-day="Tuesday">9</p>
+                    <p class="days" data-month="December" data-day="Wednesday">10</p>
+                    <p class="days" data-month="December" data-day="Thursday">11</p>
+                    <p class="days" data-month="December" data-day="Friday">12</p>
+                    <p class="days" data-month="December" data-day="Saturday">13</p>
+                    <p class="days" data-month="December" data-day="Sunday">14</p>
+                    <p class="days" data-month="December" data-day="Monday">15</p>
+                    <p class="days" data-month="December" data-day="Tuesday">16</p>
+                    <p class="days" data-month="December" data-day="Wednesday">17</p>
+                    <p class="days" data-month="December" data-day="Thursday">18</p>
+                    <p class="days" data-month="December" data-day="Friday">19</p>
+                    <p class="days" data-month="December" data-day="Saturday">20</p>
+                    <p class="days" data-month="December" data-day="Sunday">21</p>
+                    <p class="days" data-month="December" data-day="Monday">22</p>
+                    <p class="days" data-month="December" data-day="Tuesday">23</p>
+                    <p class="days" data-month="December" data-day="Wednesday">24</p>
+                    <p class="days" data-month="December" data-day="Thursday">25</p>
+                    <p class="days" data-month="December" data-day="Friday">26</p>
+                    <p class="days" data-month="December" data-day="Saturday">27</p>
+                    <p class="days" data-month="December" data-day="Sunday">28</p>
+                    <p class="days" data-month="December" data-day="Monday">29</p>
+                    <p class="days" data-month="December" data-day="Tuesday">30</p>
+                    <p class="days" data-month="December" data-day="Wednesday">31</p>
+                </div>
+            </div>
+
+        </div></div>
+        <p>At</p>
+        <div type="time" onclick="timePickerToggle();" class="booking-time-input" style="display: flex;" > 
+
+        </div>
+                        <div class="time-pick-container">
+        <div class="time-items-container">
+                <div class="hour-column">
+                    <p class="time-labels">Hour</p>
+                    <div class="hour-column-items">
+                    <button class="hour-button 1"  onclick="
+                        
+                        timeValuePick(this , 'hour');" data-value="1" type="button">1</button>
+                    <button class="hour-button 2"  onclick="timeValuePick(this , 'hour')" data-value="2" type="button">2</button>
+                    <button class="hour-button 3" onclick="timeValuePick(this , 'hour')" data-value="3" type="button">3</button>
+                    <button class="hour-button 4" onclick="timeValuePick(this , 'hour')" data-value="4" type="button">4</button>
+                    <button class="hour-button 5" onclick="timeValuePick(this , 'hour')" data-value="5" type="button">5</button>
+                    <button class="hour-button 6" onclick="timeValuePick(this , 'hour')" data-value="6" type="button">6</button>
+                    <button class="hour-button 7" onclick="timeValuePick(this , 'hour')" data-value="7" type="button">7</button>
+                    <button class="hour-button 8" onclick="timeValuePick(this , 'hour')" data-value="8" type="button">8</button>
+                    <button class="hour-button 9" onclick="timeValuePick(this , 'hour')" data-value="9" type="button">9</button>
+                    <button class="hour-button 10" onclick="timeValuePick(this , 'hour')" data-value="10" type="button">10</button>
+                    <button class="hour-button 11" onclick="timeValuePick(this , 'hour')" data-value="11" type="button">11</button>
+                    <button class="hour-button 12" onclick="timeValuePick(this , 'hour')" data-value="12" type="button">12</button>
+                    </div>
+                </div>
+
+                <div class="minute-column">
+                    <p class="time-labels">Minute</p>
+                    <div class="minute-column-items">
+                    <button class="minute-button 0" onclick="timeValuePick(this ,'minute');" data-value="00" type="button">:00</button>
+                    <button class="minute-button 15" onclick="timeValuePick(this , 'minute');" data-value="15" type="button">:15</button>
+                    <button class="minute-button 30" onclick="timeValuePick(this , 'minute');" data-value="30" type="button">:30</button>
+                    <button class="minute-button 45" onclick="timeValuePick(this , 'minute');" data-value="45" type="button">:45</button>
+                    </div>
+                </div>
+                <div class="pm-am">
+                    <p class="time-labels">Period</p>
+                    <div class="pm-am-column-items">
+                    <button class="period-button am" data-value="AM" onclick="timeValuePick(this , 'period');" data-value="AM" type="button">AM</button>
+                    <button class="period-button pm" data-value="PM" onclick="timeValuePick(this , 'period');" data-value="PM" type="button">PM</button>
+                    </div>
+                </div>
+
+
+        </div>
+                        <button class="time-pick-cta" onclick="
+                        
+                                const timePicker = document.querySelector('.time-pick-container-on');
+                                timePicker.classList.replace('time-pick-container-on', 'time-pick-container');  
+                        " type="button">
+                            Done
+                        </button>
+    </div>
+        
+                            </div>
+                        </div>
+
+                <button class="booking-submit-button" type="submit" onclick="dataExtraction();">Finish Booking</button>
+            </form>
+
+    </section>
+</body>
+<script  src="PFS.js"></script>
+
+</html>
+<style>
+.time-pick-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 86.5116279vw;
+    background-color: #1b1b1b;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+    border-radius: 2.3255814vw;
+    position: absolute;
+    left: 999px;
+    height: 0px;
+    transition: 0.2s;
+}
+
+
+.time-pick-container .time-items-container, .time-pick-container button , .time-pick-container p{
+height: 0px;
+}
+
+.time-pick-container-on{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 86.5116279vw;
+    background-color: #1b1b1b;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+    border-radius: 2.3255814vw;
+    position: absolute;
+    height: 138.6046511516129vw;
+    transition: 0.2s;
+}
+
+.time-pick-container-on button:active{
+    background-color: #DBA622;
+}
+
+.time-pick-container-on button{
+    transition: 0.2s;
+}
+
+.time-pick-container button:active{
+    background-color: #DBA622;
+}
+
+.active{
+    background-color: #DBA622 !important;
+}
+
+.time-items-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 4.88372093vw;
+    padding-right: 4.88372093vw;
+}
+
+.time-labels{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    height: 13.95348837096774vw;
+    display: flex
+;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hour-column{
+    height: 104.186047vw;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5.58139535vw;
+}
+
+.hour-column-items{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 104.186047vw;
+}
+
+.hour-button , .active-hour-value{   
+        background-color: #363434;
+        color: white;
+        width: 24.6511628vw;
+        height: 6.97674419vw;
+        border-radius: 2.3255814vw;
+        font-weight: bold;
+        line-height: 1;
+
+
+        border: none;
+        box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+        font-size: clamp(0px ,3.72093023vw , 18.8651px);
+        box-sizing: border-box;
+        display: flex; flex-direction: row; align-items: center; justify-content: center;
+}
+
+.hour-button:hover{
+    cursor: pointer;
+}
+
+.minute-column , .active-minute-value, .period-button , .active-period-value{
+    height: 104.186047vw;
+}
+
+.minute-column button, .pm-am button{
+    margin-bottom: 1vw;
+}
+
+.minute-button , .period-button{
+        background-color: #363434;
+        color: white;
+        width: 24.6511628vw;
+        height: 10.4651163vw;
+        border-radius: 2.3255814vw;
+        font-weight: bold;
+
+
+        border: none;
+        box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
+        font-size: clamp(0px ,3.72093023vw , 18.8651px);
+        box-sizing: border-box;
+        display: flex; flex-direction: row; align-items: center; justify-content: center;
+}
+
+
+.minute-button:hover, .period-button:hover{
+    cursor: pointer;
+}
+
+.time-cta-container{
+    width: 86.5116279vw;
+}
+
+
+.time-pick-cta{
+    width: 100%;
+    height: 14.8837209vw;
+    background-color: #363434;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 0px 0px 2.3255814vw 2.3255814vw;
+    font-size: clamp(0px, 3.72093023vw, 18.8651px);
+    cursor: pointer;
+}
+
+
+
+</style>
+    
+    <script  src="booking-page.js">
+
+    </script>
+
+
+    <script  src="pos.js">
+
+    </script>
+
+
+
+
