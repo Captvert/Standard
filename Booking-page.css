@@ -515,8 +515,8 @@ body{
         color: white;
         transition: 0.2s;
         position: absolute;
-        top: 30%;
-        transform: translateY(-30%);
+        top: 85%;
+        transform: translateY(-85%);
         visibility: visible !important;
     }
 
