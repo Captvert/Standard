@@ -1,11 +1,23 @@
 body{
     height:fit-content;
-    width: 100vw;
+    width: fit-content;
     overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+
+
+.header-right-box {
+    width: fit-content;
 }
 
 .booking-section{
-    width: 86.5116279vw;
+    width: clamp(0px, 86.5116279vw, 438px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +25,7 @@ body{
 }
 
 .booking-introduction{
-    height: 20.2325581vw;
+    height: clamp(0px, 20.2325581vw, 102.55px);
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 16.9767442vw;
+    margin-top: clamp(0px, 16.9767442vw, 86px);
 }
 
 .service-pick-container {
@@ -61,6 +73,11 @@ body{
     margin-bottom: clamp(0px, 8.95348837vw, 45.37px);
 }
 
+.service-based-container, .service2-based-container,
+.service3-based-container, .service4-based-container{
+    width: clamp(0px, 86.5116279vw, 438px);
+}
+
 .service-based-container-on{
     display: flex;
     flex-direction: column;
@@ -72,8 +89,8 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 86.5116279vw;
-    margin-top: 5.34883721vw;
+    width: clamp(0px, 86.5116279vw, 438px);
+    margin-top: clamp(0px, 5.34883721vw, 27px);
     position: relative;
 }
 
@@ -86,7 +103,7 @@ body{
     width: 86.5116279vw;
     max-width: 438.61px;
     max-height: 82.53px;
-    height: 16.2790698vw;
+    height: clamp(0px, 16.2790698vw, 82.572px);
     background-color: #DBA622;
     border-radius: clamp(0px, 2.3255814vw ,11.7905914px) ;
     border-style: none;
@@ -101,8 +118,8 @@ body{
 }
 
 .service-pick-select {
-    width: 86.5116279vw;
-    height: 12.544186vw;
+    width: clamp(0px, 86.5116279vw, 438px);
+    height: clamp(0px, 12.544186vw, 63.66px);
     border: none;
     font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
     font-weight: bold;
@@ -112,22 +129,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 2.2355814vw;
+    border-radius: clamp(0px, 2.2355814vw, 11.319px);
     box-sizing: border-box;
-    padding-left: 7.20930232vw;
-    padding-right: 7.20930232vw;
+    padding-left: clamp(0px, 7.20930232vw, 36.55px);
+    padding-right: clamp(0px, 7.20930232vw, 36.55px);
 }
 
 .option1-items-container{
     display: flex ;
     flex-direction: row;
     align-items: center;
-    width: 41.3953488vw;
+    width: clamp(0px, 41.3953488vw, 209.5px);
 }
 
 .service-pick-select > div , .visitor-amount-select > div{
     width: 100%;
-    height: 12.544186vw;
+    height: clamp(0px, 12.544186vw, 63.69px);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -136,22 +153,22 @@ body{
     font-weight: bold;
     color: white;
     background-color: #1b1b1b;
-    border-radius: 2.2355814vw;
+    border-radius: clamp(0px, 2.2355814vw, 11.319px);
     box-sizing: border-box;
-    padding-left: 7.20930232vw;
-    padding-right: 7.20930232vw;
+    padding-left: clamp(0px, 7.20930232vw, 36.55px);
+    padding-right: clamp(0px, 7.20930232vw, 36.55px);
 }
 
 .service-pick-select .dropdown-arrow, .visitor-amount-select .dropdown-arrow{
-    width: 2.3255814vw;
-    height: 2.3255814vw;
+    width: clamp(0px, 2.3255814vw, 11.78px);
+    height: clamp(0px, 2.3255814vw, 11.78px);
     position: relative; 
     top: -355%;
     right: -48%;
 }
 
 .service-pick-select img{
-    width: 4.65116279vw;
+    width: clamp(0px, 4.65116279vw, 23.54px);
 }
 
 .picked-service{
@@ -168,12 +185,12 @@ body{
 
 
     
-    .service-pick{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+.service-pick{
+        width: clamp(0px , 86.5116279vw, 438.55px);
+        height: clamp(0px , 12.544186vw, 63.66px);
    
         border: none;
-        font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
+        font-size: clamp(0px, 3.72093023vw, 18.88px) ;
         font-family: Inter;
         font-weight: bold;
         color: white;
@@ -182,43 +199,43 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px , 2.2355814vw, 11.34px);
         transition: 0.2s;
         cursor: pointer;
         position: static;
         top: 0px;
-    }
+}
     
     .service-pick-title{
-        margin-bottom: 5.34883721vw;
+        margin-bottom: clamp(0px , 5.34883721vw , 27.10px);
     }
 
     .service-pick-title::after{
        content: '*';
        color: red;
-       margin-left: 1vw;
+       margin-left: clamp(0px, 1vw, 5.07px);
     }
 
     .service-pick-title-valid{
-        margin-bottom: 5.34883721vw;
+        margin-bottom: clamp(0px, 5.34883721vw, 27.1111111px);
     }
 
     .service-pick-title-valid::after{
         content: url('Correct.png');
        color: red;
-       margin-left: 1vw;
+       margin-left: clamp(0px, 1vw, 5.07px);
     }
 
     .service-pick-description{
         font-size: clamp(0px ,3.72093023vw , 18.8651px);
         font-weight: 300;
-        margin-top: 3.02325581vw;
+        margin-top: clamp(0px, 3.02325581vw, 15.3px);
     }
 
 
     .service-pick-toggled{
-        width: 86.5116279vw;
-        height: calc(4*12.544186vw);
+        width: clamp(0px, 86.5116279vw, 438px);
+        height: clamp(0px, 50.176744vw, 254.28px);
 
         border: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
@@ -230,7 +247,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.297px);
         transition: 0.2s;
         position: relative;
         z-index: 2;
@@ -248,8 +265,8 @@ body{
     }
     
     .service-pick > div, .service-pick-toggled > div{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+        width: clamp(0px, 86.5116279vw, 438.75px);
+        height: clamp(0px, 12.544186vw, 63.64px);
     
         display: flex;
         flex-direction: row;
@@ -262,10 +279,10 @@ body{
         color: white;
     
         background-color: #1b1b1b;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.33px);
         box-sizing: border-box;
-        padding-left: 7.20930232vw;
-        padding-right: 7.20930232vw;
+        padding-left: clamp(0px, 7.20930232vw, 36.55px);
+        padding-right: clamp(0px, 7.20930232vw, 36.55px);
         white-space: nowrap;
         flex-grow: 0;
         flex-shrink: 0;
@@ -276,19 +293,19 @@ body{
     }
     
     .option1-icon{
-        width: 4.65116279vw;
-        margin-right: 2.3255814vw;
+        width: clamp(0px, 4.65116279vw, 23.56px);
+        margin-right: clamp(0px, 2.3255814vw, 11.78px);
     }
 
 
 
     .dropdown-icon{
-        width: 2.3vw;
+        width: clamp(0px, 2.3vw, 11.721px);
         display: none;
     }
 
     .dropdown-icon-on{
-        width: 2.3vw;
+        width: clamp(0px, 2.3vw, 11.721px);
         display: flex;
         transition: 0.2s;
         overflow: visible;
@@ -297,12 +314,12 @@ body{
     .specify-date-label::after{
         content: '*';
         color: red;
-        margin-left: 1vw;
+        margin-left: clamp(0px, 1vw, 5.07px);
     }
 
     .specify-date-label-valid::after{
         content: url(Correct.png);
-        margin-left: 1vw;
+        margin-left: clamp(0px, 1vw, 5.07px);
     }
 
 
@@ -317,8 +334,8 @@ body{
 
 
     .custom-dropdown{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+        width: clamp(0px, 86.5116279vw, 438.33px);
+        height: clamp(0px, 12.544186vw, 63.61px);
    
         border: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
@@ -330,7 +347,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.33px);
         transition: 0.2s;
         cursor: pointer;
         position: static;
@@ -338,33 +355,33 @@ body{
     }
     
     .custom-dropdown-title{
-        margin-bottom: 5.34883721vw;
+        margin-bottom: clamp(0px, 5.34883721vw, 27.085px);
     }
 
     .custom-dropdown-title-valid{
-        margin-bottom: 5.34883721vw;
+        margin-bottom: clamp(0px, 5.34883721vw, 27.085px);
     }
 
     .custom-dropdown-title::after{
        content: '*';
        color: red;
-       margin-left: 1vw;
+       margin-left: clamp(0px, 1vw, 5.07px);
     }
 
     .custom-dropdown-title-valid:after{
         content: url('Correct.png');
-        margin-left: 1vw;
+        margin-left: clamp(0px, 1vw, 5.07px);
     }
 
     .custom-dropdown-description{
         font-size: clamp(0px ,3.72093023vw , 18.8651px);
         font-weight: 300;
-        margin-top: 3.02325581vw;
+        margin-top: clamp(0px, 3.02325581vw, 15.308px);
     }
 
 
     .custom-dropdown-toggled{
-        width: 86.5116279vw;
+        width: clamp(0px, 86.5116279vw, 438px);
         border: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
         font-family: Inter;
@@ -375,7 +392,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.297px);
         transition: 0.2s;
         position: relative;
         z-index: 2;
@@ -393,8 +410,8 @@ body{
     }
     
     .custom-dropdown > div, .custom-dropdown-toggled > div{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+        width: clamp(0px, 86.5116279vw, 438px);
+        height: clamp(0px, 12.544186vw, 63.66px);
     
         display: flex;
         flex-direction: row;
@@ -407,10 +424,10 @@ body{
         color: white;
     
         background-color: #1b1b1b;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.331px);
         box-sizing: border-box;
-        padding-left: 7.20930232vw;
-        padding-right: 7.20930232vw;
+        padding-left: clamp(0px, 7.20930232vw, 36.575px);
+        padding-right: clamp(0px, 7.20930232vw, 36.575px);
         white-space: nowrap;
         flex-grow: 0;
         flex-shrink: 0;
@@ -421,18 +438,18 @@ body{
     }
     
     .option1-icon{
-        width: 4.65116279vw;
+        width: clamp(0px, 4.65116279vw, 23.54px);
         margin-right: 2.3255814vw;
     }
 
 
     .dropdown-icon{
-        width: 2.3vw;
+        width: clamp(0px, 2.3255814vw, 11.78px);
         display: none;
     }
 
     .dropdown-icon-on{
-        width: 2.3vw;
+        width: clamp(0px, 2.3255814vw, 11.78px);
         display: flex;
         transition: 0.2s;
         overflow: visible;
@@ -458,18 +475,18 @@ body{
     }
 
     .booking-calendar-button{
-        width: 60vw;
+        width: clamp(0px, 60vw, 304.2px);
         background-color: #1b1b1b;
         color: white;
-        height: 14.1860465vw;
+        height: clamp(0px, 14.1860465vw, 71.72px);
         
-        padding-top: 6.1627907vw;
-        padding-bottom: 6.1627907vw;
+        padding-top: clamp(0px, 6.1627907vw, 31px);
+        padding-bottom: clamp(0px, 6.1627907vw, 31px);
 
-        padding-left: 6.1627907vw;
-        padding-right: 6.1627907vw;
+        padding-left: clamp(0px, 6.1627907vw, 31px);
+        padding-right: clamp(0px, 6.1627907vw, 31px);
         border: none;
-        border-radius: 2.3255814vw;
+        border-radius: clamp(0px, 2.3255814vw, 11.78px);
         box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.6);
         font-size: clamp(0px ,3.72093023vw , 18.8651px);
         box-sizing: border-box;
@@ -479,20 +496,20 @@ body{
 
     
     .booking-calendar-button:active{
-        width: 60vw;
+        width: clamp(0px, 60vw, 304.2px);
         background-color: #DBA622;
         color: rgb(255, 255, 255);
-        height: 14.1860465vw;
+        height: clamp(0px, 14.1860465vw, 71.74px);
 
         
-        padding-top: 6.1627907vw;
-        padding-bottom: 6.1627907vw;
+        padding-top: clamp(0px, 6.1627907vw, 31.2px);
+        padding-bottom: clamp(0px, 6.1627907vw, 31.2px);
         transition: 0.2s;
 
-        padding-left: 6.1627907vw;
-        padding-right: 6.1627907vw;
+        padding-left: clamp(0px, 6.1627907vw, 31.2px);
+        padding-right: clamp(0px, 6.1627907vw, 31.2px);
         border: none;
-        border-radius: 2.3255814vw;
+        border-radius: clamp(0px, 2.3255814vw, 11.7814px);
         font-size: clamp(0px , 3.72093023vw , 18.8651px);
         box-sizing: border-box;
         display: flex; flex-direction: row; align-items: center; justify-content: center;
@@ -505,34 +522,34 @@ body{
     
 
     .booking-calendar-on{
-        height: 80.465116vw;
-        width: 86.5116279vw;
+        height: clamp(0px, 80.465116vw, 407.517px);
+        width: clamp(0px, 86.5116279vw, 438px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         background-color: #1b1b1b;
-        border-radius: 2.3255814vw;
+        border-radius: clamp(0px, 2.3255814vw, 11.78px);
         color: white;
         transition: 0.2s;
         position: absolute;
-        top: 25%;
+        top: -520%;
         visibility: visible !important;
     }
 
     .booking-calendar-header{
         width: 100%;
-        height: 9.30232558vw;
+        height: clamp(0px, 9.30232558vw, 47.13px);
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         font-weight: bold;
         background-color: #1b1b1b;
-        border-radius: 2.3255814vw  2.3255814vw 0px 0px;
+        border-radius: clamp(0px, 2.3255814vw, 11.78px)  clamp(0px, 2.3255814vw, 11.78px) 0px 0px;
         box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.6);
-        padding-left: 2.44186046vw;
-        padding-right: 2.44186046vw;
+        padding-left: clamp(0px, 2.44186046vw, 12.39px);
+        padding-right: clamp(0px, 2.44186046vw, 12.39px);
         box-sizing: border-box;
         position: relative;
         z-index: 1;
@@ -545,10 +562,10 @@ body{
         overflow-y: scroll;
         position: relative;
         z-index: 0;
-        padding-left: 2.44186046vw;
-        padding-right: 2.44186046vw;
-        padding-top: 7vw;
-        padding-bottom: 7vw;
+        padding-left: clamp(0px, 2.44186046vw, 12.37px);
+        padding-right: clamp(0px, 2.44186046vw, 12.37px);
+        padding-top: clamp(0px, 7vw, 35.49px);
+        padding-bottom: clamp(0px, 7vw, 35.49px);
         box-sizing: border-box;
 
         display: flex;
@@ -561,8 +578,8 @@ body{
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: 5.5vw;
-        margin-bottom: 8vw;
+        height: clamp(0px, 5.5vw, 27.885px);
+        margin-bottom: clamp(0px, 8vw, 40.56px);
     }
 
     .month , .year{
@@ -572,11 +589,11 @@ body{
     .bcb-body{
         width: 100%;
         display: grid;
-        grid-template-rows: repeat(6, 14vw);
+        grid-template-rows: repeat(6, clamp(0px, 14vw, 70.98px));
         grid-template-columns: repeat(7, 14.2857143%);
         grid-auto-flow: row;
-        row-gap: 4vw;
-        margin-bottom: 8vw;
+        row-gap: clamp(0px, 4vw, 20.28px);
+        margin-bottom: clamp(0px, 8vw, 40.56px);
     }
 
 
@@ -592,8 +609,8 @@ body{
     }
 
     .days-of-week{
-        width: 11.6604651vw;
-        height: 3.6744186vw;
+        width: clamp(0px, 11.6604651vw, 59px);
+        height: clamp(0px, 3.6744186vw, 18.635px);
         text-align: center;
     }
 
@@ -606,7 +623,7 @@ body{
         justify-content: center;
         height: 100%;
         transition: 0.2s;
-        border-radius: 1.0255814vw;
+        border-radius: clamp(0px, 1.0255814vw, 5.195px);
     }
 
     .days:hover{
@@ -627,7 +644,7 @@ body{
         justify-content: space-between;
         align-items: center;
         background-color: #1b1b1b;
-        border-radius: 2.3255814vw;
+        border-radius: clamp(0px, 2.3255814vw, 11.78px);
         position: absolute;
         left: -9999;
         color: white;
@@ -636,30 +653,30 @@ body{
 
 
     .booking-calendar-on{
-        height: 80.465116vw;
-        width: 86.5116279vw;
+        height: clamp(0px, 80.465116vw, 407.5px);
+        width: clamp(0px, 86.5116279vw, 438px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         background-color: #1b1b1b;
-        border-radius: 2.3255814vw;
+        border-radius: clamp(0px, 2.3255814vw, 11.78px);
         color: white;
         transition: 0.2s;
         position: absolute;
-        top: -520%;
+        bottom: -55%;
         visibility: visible !important;
     }
 
 
     .booking-time-input{
-        width: 19.6511628vw;
+        width: clamp(0px, 19.6511628vw, 99.54px);
         background-color: #1b1b1b;
         color: white;
-        height: 14.1860465vw;
+        height: clamp(0px, 14.1860465vw, 71.75px);
     
         border: none;
-        border-radius: 2.3255814vw;
+        border-radius: clamp(0px, 2.3255814vw, 11.784px);
         box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.6);
         font-size: clamp(0px ,3.72093023vw , 18.8651px);
         box-sizing: border-box;
@@ -676,8 +693,8 @@ body{
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius: clamp(0px, 1.29302326vw, 6.55px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
@@ -701,7 +718,7 @@ body{
 
     .fullname-input:focus::placeholder , .place-of-occasion-input:focus::placeholder , .brand-name-input:focus::placeholder{
         opacity: 0;
-        transform: translateY(-13.5vw);
+        transform: translateY(-(clamp(0px, 13.5vw, 68.445px)));
         color: white;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
     }
@@ -716,7 +733,7 @@ body{
         color: white;
         display: inline-block;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -727,7 +744,7 @@ body{
         color: red;
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc( -1 * (clamp(0px, 12vw, 60.84px)));
     }
 
     .input-wrapper-valid{
@@ -738,7 +755,7 @@ body{
         content: url('Correct.png');
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1* (clamp(0px, 12vw, 60.84px)));
     }
 
 
@@ -746,22 +763,21 @@ body{
 
     @keyframes input-label {
         0%{
-            transform: translateY(-8.2vw);
-        }
+            transform: translateY(calc(-1 * (clamp(0px, 8.2vw, 41.48px))));        }
 
         100%{
-            transform: translateY(-13.5vw);
+            transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         }
     }
     
     .date-and-time::after{
         content: url('Correct.png');
-        margin-left: 1vw;
+        margin-left: clamp(0px, 1vw, 5px);
     }
 
 .custom-required-message{
     color: red;
-    font-size: 2.79069767vw ;
+    font-size: clamp(0px, 2.79069767vw, 14.052px) ;
     display: none;
     flex-direction: row;
     align-items: center;
@@ -769,7 +785,7 @@ body{
 
 
 .warning{
-    width: 3.25581395vw ;
+    width: clamp(0px, 3.25581395vw, 16.417px) ;
 }
 
 
@@ -781,8 +797,8 @@ body{
 
 
 p.custom-error-message.required {
-    margin-top: 1.5vw;
-    font-size: 2.7vw;
+    margin-top: clamp(0px, 1.5vw, 7.605px);
+    font-size: clamp(0px, 2.7vw, 13.689px);
     color: red;
     display: flex;
     position: absolute;
@@ -791,9 +807,9 @@ p.custom-error-message.required {
 p.custom-error-message.invalid {
     display: flex;
     color: red;
-    font-size: 2.7vw;
+    font-size: clamp(0px, 2.7vw, 13.689px);
     position: absolute;
-    margin-top: 1.5vw;
+    margin-top: clamp(0px, 1.5vw, 7.605px);
 }
 
 /* Override the pseudo-element content when input has 'valid' class */
@@ -815,15 +831,15 @@ p.custom-error-message.invalid {
 
 .specify-date-label-valid::after{
     content: url('Correct.png');
-    margin-left: 1vw;
+    margin-left: clamp(0px, 1vw, 5.07px);
 }
 
 
 
 
 .number-of-products{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+        width: clamp(0px, 86.5116279vw, 438px);
+        height: clamp(0px, 12.544186vw, 63.66px);
    
         border: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
@@ -835,7 +851,7 @@ p.custom-error-message.invalid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.33px);
         transition: 0.2s;
         cursor: pointer;
         position: static;
@@ -845,36 +861,36 @@ p.custom-error-message.invalid {
     }
     
     .number-of-products-title{
-        margin-bottom: 5.34883721vw;
+        margin-bottom: clamp(0px, 5.34883721vw, 27px);
     }
 
     .number-of-products-title-valid{
-        margin-bottom: 5.34883721vw ;
+        margin-bottom: clamp(0px, 5.34883721vw, 27px) ;
     }
 
     .number-of-products-title::after{
        content: '*';
        color: red;
-       margin-left: 1vw;
+       margin-left: clamp(0px, 1vw, 5.07px);
     }
 
 
 
     .number-of-products-title-valid::after{
        content: url(Correct.png);
-        margin-left: 1vw;
+        margin-left: clamp(0px, 1vw, 5.07px);
     }
 
     .number-of-products-description{
         font-size: clamp(0px ,3.72093023vw , 18.8651px);
         font-weight: 300;
-        margin-top: 3.02325581vw;
+        margin-top: clamp(0px, 3.02325581vw, 15.31px);
     }
 
 
     .number-of-products-toggled{
-        width: 86.5116279vw;
-        height: calc(4*12.544186vw);
+        width: clamp(0px, 86.5116279vw, 438px);
+        height: clamp(0px, 50.176744vw, 254.34px);
 
         border: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
@@ -886,14 +902,14 @@ p.custom-error-message.invalid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.33px);
         transition: 0.2s;
         position: relative;
         z-index: 2;
         cursor: pointer;
         position: static;
         
-        margin-bottom: 3.02325581vw;
+        margin-bottom: clamp(0px, 3.02325581vw, 15.32px);
 
     }
     
@@ -905,8 +921,8 @@ p.custom-error-message.invalid {
     }
     
     .number-of-products > div, .number-of-products-toggled > div{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+        width: clamp(0px, 86.5116279vw, 438px);
+        height: clamp(0px, 12.544186vw, 63.60px);
     
         display: flex;
         flex-direction: row;
@@ -919,10 +935,10 @@ p.custom-error-message.invalid {
         color: white;
     
         background-color: #1b1b1b;
-        border-radius: 2.2355814vw;
+        border-radius:clamp(0px, 2.2355814vw, 11.33px);
         box-sizing: border-box;
-        padding-left: 7.20930232vw;
-        padding-right: 7.20930232vw;
+        padding-left: clamp(0px, 7.20930232vw, 36.55px);
+        padding-right: clamp(0px, 7.20930232vw, 36.55px);
         white-space: nowrap;
         flex-grow: 0;
         flex-shrink: 0;
@@ -933,18 +949,18 @@ p.custom-error-message.invalid {
     }
     
     .option1-icon{
-        width: 4.65116279vw;
-        margin-right: 2.3255814vw;
+        width: clamp(0px, 4.65116279vw, 23.55px);
+        margin-right: clamp(0px, 2.3255814vw, 11.78px);
     }
 
 
     .dropdown-icon{
-        width: 2.3vw;
+        width: clamp(0px, 2.3vw, 11.72px);
         display: none;
     }
 
     .dropdown-icon-on{
-        width: 2.3vw;
+        width:clamp(0px, 2.3vw, 11.72px);
         display: flex;
         transition: 0.2s;
         overflow: visible;
@@ -975,8 +991,8 @@ p.custom-error-message.invalid {
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius: clamp(0px, 1.29302326vw, 6.558px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
@@ -991,8 +1007,8 @@ p.custom-error-message.invalid {
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius: clamp(0px, 1.29302326vw, 6.56px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
@@ -1017,7 +1033,7 @@ p.custom-error-message.invalid {
         color: white;
         display: inline-block;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1025,8 +1041,7 @@ p.custom-error-message.invalid {
 
 .use-input:focus::placeholder {
         opacity: 0;
-        transform: translateY(-13.5vw);
-        color: white;
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));        color: white;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
 }
 
@@ -1035,8 +1050,7 @@ p.custom-error-message.invalid {
 
         display: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
-        animation-name: input-label;
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));        animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
         font-weight: bold;
@@ -1049,7 +1063,7 @@ p.custom-error-message.invalid {
         color: red;
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
     .input-wrapper-valid{
@@ -1060,19 +1074,18 @@ p.custom-error-message.invalid {
         content: url('Correct.png');
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
 
 
     @keyframes input-label {
         0%{
-            transform: translateY(-8.2vw);
+            transform: translateY(calc(-1 * (clamp(0px, 8.2vw, 41.87px))));
         }
 
         100%{
-            transform: translateY(-13.5vw);
-        }
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));         }
     }
 
     .input-wrapper{
@@ -1083,8 +1096,8 @@ p.custom-error-message.invalid {
         position: absolute;
         color: red;
         display: flex;
-        font-size: 2.7vw;
-        margin-top: 1.5vw;
+        font-size: clamp(0px, 2.7vw, 13.689px);
+        margin-top: clamp(0px, 1.5vw, 7.605px);
 }
 
 
@@ -1147,8 +1160,8 @@ p.custom-error-message.invalid {
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius: clamp(0px, 1.29302326vw, 6.558px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
@@ -1173,7 +1186,7 @@ p.custom-error-message.invalid {
         color: white;
         display: inline-block;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1181,7 +1194,7 @@ p.custom-error-message.invalid {
 
 .event-coverage-use-input:focus::placeholder {
         opacity: 0;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));    
         color: white;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
 }
@@ -1191,7 +1204,7 @@ p.custom-error-message.invalid {
 
         display: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));    
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1205,7 +1218,7 @@ p.custom-error-message.invalid {
         color: red;
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1*(clamp(0px, 12vw, 60.84px)));
     }
 
     .event-coverage-input1-wrapper-valid{
@@ -1216,7 +1229,7 @@ p.custom-error-message.invalid {
         content: url('Correct.png');
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1*(clamp(0px, 12vw, 60.84px)));
     }
 
 
@@ -1224,11 +1237,11 @@ p.custom-error-message.invalid {
 
     @keyframes input-label {
         0%{
-            transform: translateY(-8.2vw);
+            transform: translateY(calc(-1 * (clamp(0px, 8.2vw, 41.57px))));
         }
 
         100%{
-            transform: translateY(-13.5vw);
+            transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         }
     }
 
@@ -1240,8 +1253,8 @@ p.custom-error-message.invalid {
         position: absolute;
         color: red;
         display: flex;
-        font-size: 2.7vw;
-        margin-top: 1.5vw;
+        font-size: clamp(0px, 2.7vw, 13.689px);
+        margin-top: clamp(0px, 1.5vw, 7.605px);
 }
 
 
@@ -1274,8 +1287,8 @@ p.custom-error-message.invalid {
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius: clamp(0px, 1.29302326vw, 6.55px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
@@ -1300,7 +1313,7 @@ p.custom-error-message.invalid {
         color: white;
         display: inline-block;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1308,7 +1321,7 @@ p.custom-error-message.invalid {
 
 .event-coverage-use-input2:focus::placeholder {
         opacity: 0;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         color: white;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
 }
@@ -1318,7 +1331,7 @@ p.custom-error-message.invalid {
 
         display: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1332,7 +1345,7 @@ p.custom-error-message.invalid {
         color: red;
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
     .event-coverage-input2-wrapper-valid{
@@ -1343,17 +1356,17 @@ p.custom-error-message.invalid {
         content: url('Correct.png');
         float: right;
         position: relative;
-        top: -12vw;
-    }
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
+    }            
 
 
     @keyframes input-label {
         0%{
-            transform: translateY(-8.2vw);
+            transform: translateY(calc(-1 * (clamp(0px, 8.2vw, 41.57px))));
         }
 
         100%{
-            transform: translateY(-13.5vw);
+            transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         }
     }
 
@@ -1365,8 +1378,8 @@ p.custom-error-message.invalid {
         position: absolute;
         color: red;
         display: flex;
-        font-size: 2.7vw;
-        margin-top: 1.5vw;
+        font-size: clamp(0px, 2.7vw, 13.69px);
+        margin-top: clamp(0px, 1.5vw, 7.605px);
 }
 
 
@@ -1394,8 +1407,8 @@ p.custom-error-message.invalid {
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius: clamp(0px, 1.29302326vw, 6.55px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
@@ -1420,7 +1433,7 @@ p.custom-error-message.invalid {
         color: white;
         display: inline-block;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1428,7 +1441,7 @@ p.custom-error-message.invalid {
 
 .event-coverage-use-input2:focus::placeholder {
         opacity: 0;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         color: white;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
 }
@@ -1438,7 +1451,7 @@ p.custom-error-message.invalid {
 
         display: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1452,8 +1465,9 @@ p.custom-error-message.invalid {
         color: red;
         float: right;
         position: relative;
-        top: -12vw;
-    }
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
+    }        
+
 
     .event-coverage-input2-wrapper-valid{
         margin-bottom: clamp(0px , 8.95348837vw , 45.37px );
@@ -1463,7 +1477,7 @@ p.custom-error-message.invalid {
         content: url('Correct.png');
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
 
@@ -1485,8 +1499,8 @@ p.custom-error-message.invalid {
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius:clamp(0px, 1.29302326vw, 6.55px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
@@ -1511,7 +1525,7 @@ p.custom-error-message.invalid {
         color: white;
         display: inline-block;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1519,7 +1533,7 @@ p.custom-error-message.invalid {
 
 .event-coverage-location:focus::placeholder {
         opacity: 0;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         color: white;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
 }
@@ -1529,7 +1543,7 @@ p.custom-error-message.invalid {
 
         display: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1543,7 +1557,7 @@ p.custom-error-message.invalid {
         color: red;
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
     .event-coverage-location-input-wrapper-valid{
@@ -1554,7 +1568,7 @@ p.custom-error-message.invalid {
         content: url('Correct.png');
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
 
@@ -1563,11 +1577,11 @@ p.custom-error-message.invalid {
 
     @keyframes input-label {
         0%{
-            transform: translateY(-8.2vw);
+            transform: translateY(calc(-1 * (clamp(0px, 8.2vw, 41.57px))));
         }
 
         100%{
-            transform: translateY(-13.5vw);
+            transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         }
     }
 
@@ -1579,7 +1593,7 @@ p.custom-error-message.invalid {
         position: absolute;
         color: red;
         display: flex;
-        font-size: 2.7vw;
+        font-size: clamp(0px, 2.7vw, 13.69px);
         margin-top: 1.5vw;
 }
 
@@ -1602,8 +1616,8 @@ p.custom-error-message.invalid {
 
 
     .expected-number-of-visitors{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+        width: clamp(0px, 86.5116279vw, 375.5px);
+        height: clamp(0px, 12.544186vw, 75.5px);
    
         border: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
@@ -1615,7 +1629,7 @@ p.custom-error-message.invalid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 20px);
         transition: 0.2s;
         cursor: pointer;
         position: static;
@@ -1623,33 +1637,33 @@ p.custom-error-message.invalid {
     }
     
     .expected-number-of-visitors-title{
-        margin-bottom: 5.34883721vw;
+        margin-bottom: clamp(0px, 5.34883721vw, 75.5px);
     }
 
     .expected-number-of-visitors-title-valid{
-        margin-bottom: 5.34883721vw;
+        margin-bottom: clamp(0px, 5.34883721vw, 75.5px);
     }
 
     .expected-number-of-visitors-title::after{
        content: '*';
        color: red;
-       margin-left: 1vw;
+       margin-left: clamp(0px, 1vw, 75.5px);
     }
 
     .expected-number-of-visitors-title-valid:after{
         content: url('Correct.png');
-        margin-left: 1vw;
+        margin-left: clamp(0px, 1vw, 75.5px);
     }
 
     .expected-number-of-visitors-description{
         font-size: clamp(0px ,3.72093023vw , 18.8651px);
         font-weight: 300;
-        margin-top: 3.02325581vw;
+        margin-top: clamp(0px, 3.02325581vw, 75.5px);
     }
 
 
     .expected-number-of-visitors-toggled{
-        width: 86.5116279vw;
+        width: clamp(0px, 86.5116279vw, 120px);
         border: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
         font-family: Inter;
@@ -1660,7 +1674,7 @@ p.custom-error-message.invalid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 15px);
         transition: 0.2s;
         position: relative;
         z-index: 2;
@@ -1678,8 +1692,8 @@ p.custom-error-message.invalid {
     }
     
     .expected-number-of-visitors > div, .expected-number-of-visitors-toggled > div{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+        width: clamp(0px, 86.5116279vw, 375.5px);
+        height: clamp(0px, 12.544186vw, 75.5px);
     
         display: flex;
         flex-direction: row;
@@ -1692,10 +1706,10 @@ p.custom-error-message.invalid {
         color: white;
     
         background-color: #1b1b1b;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 15.5px);
         box-sizing: border-box;
-        padding-left: 7.20930232vw;
-        padding-right: 7.20930232vw;
+        padding-left: clamp(0px, 7.20930232vw, 75.5px);
+        padding-right: clamp(0px, 7.20930232vw, 75.5px);
         white-space: nowrap;
         flex-grow: 0;
         flex-shrink: 0;
@@ -1706,18 +1720,18 @@ p.custom-error-message.invalid {
     }
     
     .option1-icon{
-        width: 4.65116279vw;
-        margin-right: 2.3255814vw;
+        width: clamp(0px, 4.65116279vw, 75.5px);
+        margin-right: clamp(0px, 2.3255814vw, 15.5px);
     }
 
 
     .dropdown-icon{
-        width: 2.3vw;
+        width: clamp(0px, 2.3vw, 75.5px);
         display: none;
     }
 
     .dropdown-icon-on{
-        width: 2.3vw;
+        width: clamp(0px, 2.3vw, 75.5px);
         display: flex;
         transition: 0.2s;
         overflow: visible;
@@ -1752,13 +1766,13 @@ p.custom-error-message.invalid {
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius: clamp(0px, 1.29302326vw, 6.55px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
         color: white;
-}    
+}  
 
 .use-input-event-duration::placeholder{
         color: #7E7E7E;
@@ -1778,7 +1792,7 @@ p.custom-error-message.invalid {
         color: white;
         display: inline-block;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1786,7 +1800,7 @@ p.custom-error-message.invalid {
 
 .use-input-event-duration:focus::placeholder {
         opacity: 0;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         color: white;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
 }
@@ -1796,7 +1810,7 @@ p.custom-error-message.invalid {
 
         display: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1810,7 +1824,7 @@ p.custom-error-message.invalid {
         color: red;
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
     .event-duration-input-wrapper-valid{
@@ -1821,7 +1835,7 @@ p.custom-error-message.invalid {
         content: url('Correct.png');
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
 
@@ -1829,11 +1843,11 @@ p.custom-error-message.invalid {
 
     @keyframes input-label {
         0%{
-            transform: translateY(-8.2vw);
+            transform: translateY(calc(-1 * (clamp(0px, 8.2vw, 41.57px))));
         }
 
         100%{
-            transform: translateY(-13.5vw);
+            transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         }
     }
 
@@ -1845,8 +1859,8 @@ p.custom-error-message.invalid {
         position: absolute;
         color: red;
         display: flex;
-        font-size: 2.7vw;
-        margin-top: 1.5vw;
+        font-size: clamp(0px, 2.7vw, 13.69px);
+        margin-top: clamp(0px, 1.5vw, 7.605px);
 }
 
 
@@ -1872,13 +1886,13 @@ p.custom-error-message.invalid {
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius:clamp(0px, 1.29302326vw, 6.55px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
         color: white;
-}    
+}   
 
 .use-input-brand-name::placeholder{
         color: #7E7E7E;
@@ -1898,7 +1912,7 @@ p.custom-error-message.invalid {
         color: white;
         display: inline-block;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1906,7 +1920,7 @@ p.custom-error-message.invalid {
 
 .use-input-brand-name:focus::placeholder {
         opacity: 0;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         color: white;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
 }
@@ -1916,7 +1930,7 @@ p.custom-error-message.invalid {
 
         display: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -1930,7 +1944,7 @@ p.custom-error-message.invalid {
         color: red;
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
     .brand-name-input-wrapper-valid{
@@ -1941,7 +1955,7 @@ p.custom-error-message.invalid {
         content: url('Correct.png');
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
 
@@ -1949,11 +1963,11 @@ p.custom-error-message.invalid {
 
     @keyframes input-label {
         0%{
-            transform: translateY(-8.2vw);
+            transform: translateY(calc(-1 * (clamp(0px, 8.2vw, 41.57px))));
         }
 
         100%{
-            transform: translateY(-13.5vw);
+            transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         }
     }
 
@@ -1965,8 +1979,8 @@ p.custom-error-message.invalid {
         position: absolute;
         color: red;
         display: flex;
-        font-size: 2.7vw;
-        margin-top: 1.5vw;
+        font-size: clamp(0px, 2.7vw, 13.69px);
+        margin-top: clamp(0px, 1.5vw, 7.605px)
 }
 
 
@@ -1996,8 +2010,8 @@ p.custom-error-message.invalid {
 
 
     .expected-number-of-visitors2{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+        width: clamp(0px, 86.5116279vw, 438px);
+        height: clamp(0px, 12.544186vw, 75px);
    
         border: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
@@ -2009,7 +2023,7 @@ p.custom-error-message.invalid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.33px);
         transition: 0.2s;
         cursor: pointer;
         position: static;
@@ -2017,33 +2031,33 @@ p.custom-error-message.invalid {
     }
     
     .expected-number-of-visitors2-title{
-        margin-bottom: 5.34883721vw;
+        margin-bottom: clamp(0px, 5.34883721vw, 27.09px);
     }
 
     .expected-number-of-visitors2-title-valid{
-        margin-bottom: 5.34883721vw;
+        margin-bottom: clamp(0px, 5.34883721vw, 27.09px);
     }
 
     .expected-number-of-visitors2-title::after{
        content: '*';
        color: red;
-       margin-left: 1vw;
+       margin-left: clamp(0px, 1vw, 5.07px);
     }
 
     .expected-number-of-visitors2-title-valid:after{
         content: url('Correct.png');
-        margin-left: 1vw;
+        margin-left: clamp(0px, 1vw, 5.07px);
     }
 
     .expected-number-of-visitors2-description{
         font-size: clamp(0px ,3.72093023vw , 18.8651px);
         font-weight: 300;
-        margin-top: 3.02325581vw;
+        margin-top: clamp(0px, 3.02325581, 15.3102px);
     }
 
 
     .expected-number-of-visitors2-toggled{
-        width: 86.5116279vw;
+        width: clamp(0px, 86.5116279, 438px);
         border: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
         font-family: Inter;
@@ -2054,7 +2068,7 @@ p.custom-error-message.invalid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.314px);
         transition: 0.2s;
         position: relative;
         z-index: 2;
@@ -2072,8 +2086,8 @@ p.custom-error-message.invalid {
     }
     
     .expected-number-of-visitors2 > div, .expected-number-of-visitors2-toggled > div{
-        width: 86.5116279vw;
-        height: 12.544186vw;
+        width: clamp(0px, 86.5116279vw, 375.5px);
+        height: clamp(0px, 12.544186vw, 75.5px);
     
         display: flex;
         flex-direction: row;
@@ -2086,10 +2100,10 @@ p.custom-error-message.invalid {
         color: white;
     
         background-color: #1b1b1b;
-        border-radius: 2.2355814vw;
+        border-radius: clamp(0px, 2.2355814vw, 11.33px);
         box-sizing: border-box;
-        padding-left: 7.20930232vw;
-        padding-right: 7.20930232vw;
+        padding-left: clamp(0px, 7.20930232vw, 36.5px) ;
+        padding-right: clamp(0px, 7.20930232vw, 36.5px);
         white-space: nowrap;
         flex-grow: 0;
         flex-shrink: 0;
@@ -2100,18 +2114,18 @@ p.custom-error-message.invalid {
     }
     
     .option1-icon{
-        width: 4.65116279vw;
-        margin-right: 2.3255814vw;
+        width: clamp(0px, 4.65116279vw, 23.55px);
+        margin-right: clamp(0px, 2.3255814, 11.78px);
     }
 
 
     .dropdown-icon{
-        width: 2.3vw;
+        width: clamp(0px, 2.3vw, 11.66px);
         display: none;
     }
 
     .dropdown-icon-on{
-        width: 2.3vw;
+        width: clamp(0px, 2.3vw, 11.66px);
         display: flex;
         transition: 0.2s;
         overflow: visible;
@@ -2139,8 +2153,8 @@ p.custom-error-message.invalid {
         background: transparent;
         border: none;
         border-bottom: solid white 1px;
-        height: 10.4534884vw;
-        border-radius: 1.29302326vw;
+        height: clamp(0px, 10.4534884vw, 53px);
+        border-radius:clamp(0px, 1.29302326vw, 6.55px);
         width: 100%;
         box-sizing: border-box;
         transition: 0.2s;
@@ -2165,7 +2179,7 @@ p.custom-error-message.invalid {
         color: white;
         display: inline-block;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -2173,7 +2187,7 @@ p.custom-error-message.invalid {
 
 .use-input-phone-number:focus::placeholder {
         opacity: 0;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         color: white;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
 }
@@ -2183,7 +2197,7 @@ p.custom-error-message.invalid {
 
         display: none;
         font-size: clamp(0px, 3.72093023vw, 18.8651px) ;
-        transform: translateY(-13.5vw);
+        transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         animation-name: input-label;
         animation-duration: 0.2s;
         width: fit-content;
@@ -2197,7 +2211,7 @@ p.custom-error-message.invalid {
         color: red;
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
     .phone-number-input-wrapper-valid{
@@ -2208,7 +2222,7 @@ p.custom-error-message.invalid {
         content: url('Correct.png');
         float: right;
         position: relative;
-        top: -12vw;
+        top: calc(-1 * (clamp(0px, 12vw, 60.84px)));
     }
 
 
@@ -2217,11 +2231,11 @@ p.custom-error-message.invalid {
 
     @keyframes input-label {
         0%{
-            transform: translateY(-8.2vw);
+            transform: translateY(calc(-1 * (clamp(0px, 8.2vw, 41.57px))));
         }
 
         100%{
-            transform: translateY(-13.5vw);
+            transform: translateY(calc(-1 * (clamp(0px, 13.5vw, 68.445px))));
         }
     }
 
@@ -2233,6 +2247,6 @@ p.custom-error-message.invalid {
         position: absolute;
         color: red;
         display: flex;
-        font-size: 2.7vw;
-        margin-top: 1.5vw;
+        font-size: clamp(0px, 2.7vw, 13.69px);
+        margin-top: clamp(0px, 1.5vw, 7.6px);
 }
