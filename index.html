@@ -830,18 +830,18 @@
 </html>
 <style>
 .time-pick-container {
-    display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 86.5116279vw;
+    width: clamp(0px, 86.5116279vw, 438px);
     background-color: #1b1b1b;
     box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
     flex-wrap: wrap;
-    border-radius: 2.3255814vw;
+    border-radius: clamp(0px, 2.3255814vw, 11.78px);
     position: absolute;
     left: 999px;
     height: 0px;
     transition: 0.2s;
+    display: none;
 }
 
 
@@ -853,16 +853,16 @@ height: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 86.5116279vw;
+    width: clamp(0px, 86.5116279vw, 438px);
     background-color: #1b1b1b;
     box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25);
     flex-wrap: wrap;
-    border-radius: 2.3255814vw;
+    border-radius: clamp(0px, 2.3255814vw, 15.5px);
     position: absolute;
-    height: 138.6046511516129vw;
+    height: clamp(0px, 138.6046511516129vw, 702px);
     transition: 0.2s;
     top: -1000%;
-    z-index:100;
+    z-index: 100;
 }
 
 .time-pick-container-on button:active{
@@ -887,15 +887,15 @@ height: 0px;
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding-left: 4.88372093vw;
-    padding-right: 4.88372093vw;
+    padding-left: clamp(0px, 4.88372093vw, 24.75px);
+    padding-right: clamp(0px, 4.88372093vw, 24.75px);
 }
 
 .time-labels{
     font-weight: bold;
     text-align: center;
     color: white;
-    height: 13.95348837096774vw;
+    height: clamp(0px, 13.95348837096774vw, 70.72px);
     display: flex
 ;
     flex-direction: row;
@@ -905,13 +905,13 @@ height: 0px;
 }
 
 .hour-column{
-    height: 104.186047vw;
+    height: clamp(0px, 104.186047vw, 529.02px);
     width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5.58139535vw;
+    margin-bottom: clamp(0px, 5.58139535vw, 28.28px);
 }
 
 .hour-column-items{
@@ -920,15 +920,15 @@ height: 0px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 104.186047vw;
+    height: clamp(0px, 104.186047vw, 529.229px);
 }
 
 .hour-button , .active-hour-value{   
         background-color: #363434;
         color: white;
-        width: 24.6511628vw;
-        height: 6.97674419vw;
-        border-radius: 2.3255814vw;
+        width: clamp(0px, 24.6511628vw, 125px);
+        height: clamp(0px, 6.97674419vw, 35.36px);
+        border-radius: clamp(0px, 2.3255814vw, 11.78px);
         font-weight: bold;
         line-height: 1;
 
@@ -945,19 +945,19 @@ height: 0px;
 }
 
 .minute-column , .active-minute-value, .period-button , .active-period-value{
-    height: 104.186047vw;
+    height: clamp(0px, 104.186047vw, 529.33);
 }
 
 .minute-column button, .pm-am button{
-    margin-bottom: 1vw;
+    margin-bottom: clamp(0px, 1vw, 5.07px);
 }
 
 .minute-button , .period-button{
         background-color: #363434;
         color: white;
-        width: 24.6511628vw;
-        height: 10.4651163vw;
-        border-radius: 2.3255814vw;
+        width: clamp(0px, 24.6511628vw, 124.99999999999999px);
+        height: clamp(0px, 10.4651163vw, 53px);
+        border-radius: clamp(0px, 2.3255814vw, 11.78px);
         font-weight: bold;
 
 
@@ -974,18 +974,18 @@ height: 0px;
 }
 
 .time-cta-container{
-    width: 86.5116279vw;
+    width: clamp(0px, 86.5116279vw, 438px);
 }
 
 
 .time-pick-cta{
     width: 100%;
-    height: 14.8837209vw;
+    height: clamp(0px, 14.8837209vw, 75.5px);
     background-color: #363434;
     font-weight: bold;
     color: white;
     border: none;
-    border-radius: 0px 0px 2.3255814vw 2.3255814vw;
+    border-radius: 0px 0px clamp(0px, 2.3255814vw, 15.5px) clamp(0px, 2.3255814vw, 15.5px);
     font-size: clamp(0px, 3.72093023vw, 18.8651px);
     cursor: pointer;
 }
