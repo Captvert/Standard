@@ -130,7 +130,7 @@ setupFloatingLabel('.brand-name-input' , '.brand-name-input-label' , '.brand-nam
            
 
             options.forEach((option)=>{
-                const optionStructure = `<div class='custom-dropdown-option${count} dropdown-option' onclick=" let option = document.querySelector('.custom-dropdown-option${count}'); optionSelection(option);"> <div class='option1-items-container'> ${option} </div> <img src='ImagesFolder/dropdown-icon.svg' class='dropdown-icon'> </div>`
+                const optionStructure = `<div class='custom-dropdown-option${count} dropdown-option' onclick=" let option = document.querySelector('.custom-dropdown-option${count}'); optionSelection(option);"> <div class='option1-items-container'> ${option} </div> <img src='./dropdown-icon.svg' class='dropdown-icon'> </div>`
                 optionsContainer.innerHTML += optionStructure
                 count ++
 
